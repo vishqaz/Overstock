@@ -10,11 +10,123 @@
     <style>
         * {
             margin: 0;
-            padding: 0;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         
-        body>h1 {
+        #navbar {
+            width: 100%;
+            margin-bottom: -200px;
+            position: sticky;
+            background-color: #333;
+            top: 0;
+        }
+        
+        #nav1 {
+            margin: auto;
+            text-align: center;
+            background-color: rgb(14, 14, 14);
+            color: white;
+            font-size: 15px;
+            height: 28px;
+            padding-top: 8px;
+        }
+        
+        #nav2 {
+            border: 1px solid rgb(233, 230, 230);
+            height: 35px;
+            background-color: rgb(235, 232, 232);
+        }
+        
+        #nav2>img {
+            width: 2%;
+        }
+        
+        #nav2>input {
+            border-radius: 30%;
+        }
+        
+        #nav3 {
+            border: 1px solid rgb(233, 230, 230);
+            display: flex;
+            background-color: white;
+        }
+        
+        #nav3>div:nth-child(1)>img {
+            width: 30%;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        #nav3>div>input {
+            width: 900px;
+            font-size: 20px;
+            margin-left: -400px;
+            margin-right: 50px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            height: 30px;
+            border-radius: 6px;
+            border-color: rgb(237, 237, 237);
+        }
+        
+        #acc_section {
+            margin-top: 20px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        #acc_section>div {
+            width: 30%;
+        }
+        
+        #acc_Section>div>img {
+            height: 20px;
+            cursor: pointer;
+        }
+        
+        #acc_section>div>div:first-child {
+            height: 70%;
+            cursor: pointer;
+        }
+        
+        .top>img {
+            width: 50%;
+            height: 80%;
+        }
+        
+        #acc_section>div>div:last-child {
+            height: 30%;
+            margin-top: -5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        #nav4 {
+            border: 1px solid rgb(233, 230, 230);
+            height: 30px;
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+        
+        #nav4>div {
+            width: auto;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #red>a {
+            color: red;
+        }
+        
+        h1 {
             font-size: 36px;
             color: #2f3337;
             margin: 20px;
@@ -100,7 +212,6 @@
                 max-width: 660px;
                 width: 100%;
                 height: 95%;
-                position: relative;
                 cursor: pointer;
                 margin-left: 10px;
             }
@@ -126,7 +237,6 @@
             max-width: 660px;
             width: 100%;
             height: 95%;
-            position: relative;
             cursor: pointer;
         }
         
@@ -142,13 +252,11 @@
         #Header>div:nth-child(3)>div>img:first-child {
             margin-top: 30px;
             width: 100%;
-            position: relative;
         }
         
         #Header>div:nth-child(3)>div>img:last-child {
             margin-top: 30px;
             width: 100%;
-            position: relative;
         }
         
         #Header>div:nth-child(3)>div:first-child {
@@ -156,14 +264,12 @@
             background-color: #f5f6f7;
             padding-top: 20px;
             width: 100%;
-            position: relative;
         }
         
         #Header>div:nth-child(3)>div:last-child {
             margin-top: 20px;
             background-color: #f5f6f7;
             width: 100%;
-            position: relative;
         }
         
         #Header>div:nth-child(3)>div>h1 {
@@ -178,15 +284,10 @@
             margin: 10px;
         }
         
-        #showtext {
-            position: relative;
-        }
-        
         #textimage {
             display: grid;
             justify-content: center;
             text-align: center;
-            position: absolute;
             top: 35px;
             left: 0px;
             background-color: #006371;
@@ -204,7 +305,6 @@
             text-align: center;
             max-width: 140px;
             max-height: fit-content;
-            position: relative;
             margin-top: 5px;
             margin-left: 2%;
             width: 100%;
@@ -215,7 +315,6 @@
             margin-left: 9%;
             display: grid;
             justify-content: center;
-            position: relative;
             text-align: center;
             line-height: 20px;
             width: 100%;
@@ -225,7 +324,6 @@
             margin-left: 10%;
             margin-top: 0%;
             background-color: transparent;
-            position: relative;
             color: white;
             border: 0.7px solid white;
             max-width: 120px;
@@ -260,13 +358,11 @@
             font-size: 18px;
             gap: 20px;
             width: 100%;
-            position: relative;
             cursor: pointer;
         }
         
         .secondimg>div>img {
             max-width: 283px;
-            position: relative;
             width: 100%;
         }
         
@@ -298,7 +394,6 @@
                 max-width: 400px;
                 object-fit: cover;
                 width: 100%;
-                position: relative;
             }
             .secondimg>div>p {
                 max-width: 430px;
@@ -306,7 +401,6 @@
                 font-size: 18px;
                 width: 100%;
                 padding: 10px;
-                position: relative;
             }
         }
         
@@ -456,10 +550,137 @@
                 margin-top: 0;
             }
         }
+        
+        #div8 {
+            background-color: #545658;
+            color: white;
+            padding: 50px 0px 0px 80px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, auto);
+        }
+        
+        #div8>div>p {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        
+        #div8>div>p:first-child {
+            font-size: 14px;
+        }
+        
+        #div8>div {
+            padding-bottom: 30px;
+        }
+        
+        #div8>div>p>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #block9 {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            background-color: rgb(61, 61, 69);
+        }
+        
+        #block9>div:first-child {
+            margin-top: 20px;
+            margin-left: 5%;
+            margin-top: 3%;
+            margin-right: 30%;
+            width: 30%;
+            color: white;
+        }
+        
+        #block9>div:last-child {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        #block9>div>p {
+            font-size: 12px;
+        }
+        
+        #block9>div>div {
+            font-size: 12px;
+            margin-top: 20px;
+            color: white;
+            margin-left: 20px;
+            display: flex;
+        }
+        
+        #block9>div>div>a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        #block9>div>div>div>img {
+            max-width: 30px;
+            width: 100%;
+            margin-top: -5px;
+        }
+        
+        #lastindia>div>p>a {
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
+    <div id="navbar">
+        <div id="nav1">
+            <label for="">Sign up to receive our latest deals and get a 10% off coupon.</label>
+        </div>
+        <div id="nav2">
+            <label for="">Ships to:</label>
+            <input type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/640px-Flag_of_India.svg.png" width="25" height="20">
+            <label for="">India</label>
+        </div>
+        <div id="nav3">
+            <div>
+                <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="">
+            </div>
+            <div>
+                <input type="text" placeholder="search">
+            </div>
+            <div id="acc_section">
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt=""></div>
+                    <div>Account</div>
+                </div>
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                    <div>Lists</div>
+
+                </div>
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                    <div>Cart</div>
+                </div>
+            </div>
+        </div>
+        <div id="nav4">
+            <div style="color:black"><a href="furniture.html">Furniture</a></div>
+            <div style="color:black"><a href="rugs.html">Rugs</a></div>
+            <div style="color:black"><a href="decor.html">Decor</a></div>
+            <div style="color:black"><a href="bedding.html">Bedding</a></div>
+            <div style="color:black"><a href="homeimprovement.html">Home Improvement</a></div>
+            <div style="color:black"><a href="kitchen.html">Kitchen</a></div>
+            <div style="color:black"><a href="outdoor.html">Outdoor</a></div>
+            <div style="color:black"><a href="lighting.html">Lighting</a></div>
+            <div style="color:black"><a href="https://www.overstock.com/kids">Kids & Baby</a></div>
+            <div style="color:black"><a href="https://www.overstock.com/shop-all-departments">More</a></div>
+            <div style="color:black"><a href="https://www.overstock.com/guides/tips-and-ideas">Ideas</a></div>
+            <div id="red"><a href="https://www.overstock.com/deals">Sales & Deals</a></div>
+        </div>
+    </div>
+    <br>
+    <br><br><br><br><br><br><br>
+    <br><br><br>
+    <div id="container"></div>
     <h1>Bedding</h1>
 
     <div>
@@ -519,11 +740,6 @@
             </div>
             <div id="showtext">
                 <img src="https://ak1.ostkcdn.com/img/mxc/05122022_BEDDING_Hero_Desktop.jpg?imwidth=680&impolicy=medium?imwidth=750" alt="">
-                <div id="textimage">
-                    <h1>extra 15% off</h1>
-                    <p>Select Home Improvement*</p>
-                    <button>Shop Now</button>
-                </div>
             </div>
             <div>
                 <div>
@@ -706,6 +922,78 @@
                     <p>Shop All Bedding on Sale</p>
                 </div>
 
+            </div>
+        </div>
+    </div>
+    <div id="div8">
+        <div>
+            <p>MY ACCOUNT</p>
+            <p>Orders & Returns</p>
+            <p>
+                <a href="https://www.overstock.com/5522/static.html">Email Preferences</a>
+            </p>
+            <p>Account Settings</p>
+        </div>
+        <div>
+            <p>LET US HELP</p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Customer-Care">Contact Customer Care</a>
+            </p>
+            <p>
+                <a href="https://overstock.force.com/help/s/article/International-Order-Shipping-Information">Shipping Information</a>
+            </p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Returns">Return Policy</a>
+            </p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Help-Home">International Help</a>
+            </p>
+            <p>
+                <a href="https://www.overstock.com/accessibility">Accessibility</a>
+            </p>
+        </div>
+        <div>
+            <p>COMPANY INFORMATION</p>
+            <p>About Overstock™</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+            <p>Supply Chain Transparency</p>
+        </div>
+        <div>
+            <p>MORE WAYS TO SHOP</p>
+            <p>Tips & Ideas</p>
+            <p>Deals
+            </p>
+            <p>Clearance</p>
+            <p>New Arrivals</p>
+        </div>
+    </div>
+    <div id="block9">
+        <div>
+            <p>© Copyright 2022, Overstock.com®,Inc.</p>
+            <p>799 Colliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+        </div>
+        <div>
+            <div>
+                <a href="https://help.overstock.com/help/s/article/PRIVACY-AND-SECURITY-POLICY">Privacy Policy</a>
+            </div>
+            <div>
+                <a href="https://help.overstock.com/help/s/article/TERMS-AND-CONDITIONS">Terms & conditions</a>
+            </div>
+            <div>
+                <a href="https://www.overstock.com/88255/static.html">*Promotion Terms</a>
+            </div>
+            <div id="lastindia">
+                <div>
+                    <p>
+                        <a href="https://www.overstock.com/intlcountryselect">Ship to:</a>
+                    </p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt="">
+                </div>
             </div>
         </div>
     </div>
